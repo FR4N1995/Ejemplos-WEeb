@@ -1,0 +1,117 @@
+
+.btn{
+&,
+&:link, 
+&:visited{
+text-transform: uppercase;
+text-decoration: none;
+padding: 15px 40px;
+display: inline-block;
+border-radius: 100px;
+margin-top: 30px;
+ 
+font-size: $size-textoh3;
+
+/*position: relative;*/
+
+  border: none;
+   cursor: pointer;
+
+}
+
+&-blanco{
+	background-color: #fff;
+	color: #777;
+	
+
+	&::after{
+	background-color: #fff;
+
+}
+}
+
+&-azul{
+	background-color: $color-azul-medio;
+	color: $color-blanco;
+	
+
+	&::after{
+	background-color:$color-azul-medio;
+
+}
+}
+
+
+/* Para cuando pasamos por el boton*/
+&:hover{
+	transform: translateY(-3px);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+	&::after{
+	height: 100%;
+	width: 100%;
+	transform: scaleX(1.4) scaleY(1.6);
+	opacity: 0;
+	
+}
+
+
+}
+
+/* Para cuando damos click en el boton*/
+&:active{
+	transform: translateY(-1px);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+&::after{
+	content: "";
+	display: inline-block;
+	/*height: 100%;
+	width: 100%;*/
+	border-radius: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*opacity: 0.4;*/
+
+	z-index: -1;
+	transition: all .4s;
+	
+}
+
+&-animacion{
+
+    animation-name: BotonArriba;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+
+}
+	
+}
+
+.btn-texto{
+	&:link,
+	&:visited{
+	font-size: $size-textoh3;
+	color: $color-azul-oscuro;
+	display: inline-block;
+	text-decoration: none;
+	padding: 0.5rem;
+	border-bottom: 1px solid $color-azul-oscuro;
+	transition: all .2s;
+
+	}
+
+	&:hover{
+	background-color: $color-azul-oscuro;
+	color: #fff;
+	box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
+	transform: translateY(-0.2rem);
+	}
+
+	&:active{
+	box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+	transform: translateY(0);
+	}
+}

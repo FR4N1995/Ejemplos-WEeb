@@ -1,0 +1,196 @@
+.card{
+	margin-top: 3rem;
+	-moz-perspective: 150rem;
+	perspective: 150rem;
+	position: relative;
+	height: 55rem;
+
+	
+	
+	//border: 1px solid $color-negro;
+
+	&_lado{
+	//color: #67db6f;
+	//font-size: 2rem;
+
+	height: 55rem;
+	transition: all .8s ease; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	backface-visibility: hidden;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 1.5rem 4rem rgba($color-negro, .15);
+
+
+	&-a{
+	background-color:  $color-blanco;
+
+	}
+
+	&-b{
+	transform: rotateY(-180deg);
+
+	&-1{
+	background-image: linear-gradient(to right bottom, $color-deg-card-b-1, $color-deg-card-b-2);
+	}
+
+	&-2{
+	background-image: linear-gradient(to right bottom, $color-azul-claro, $color-azul-oscuro);
+	}
+
+	&-3{
+	background-image: linear-gradient(to right bottom, $color-deg-card-b-3, $color-deg-card-b-4);
+	}
+
+	}
+
+	}
+
+	&:hover &_lado-a{
+	transform: rotateY(180deg);
+	}
+
+
+	&:hover &_lado-b{
+	transform: rotateY(0);
+	}
+
+	&_imagen{
+	height: 18rem;
+	background-blend-mode: soft-light;
+	background-size: cover;
+	clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+	&-1{
+	background-image: linear-gradient(to right bottom, $color-deg-card-b-1, $color-deg-card-b-2), url(../img/itachi.jpg);
+	//background-color: $color-deg-card-b-1;
+	}
+
+	&-2{
+	background-image: linear-gradient(to right bottom, $color-azul-claro, $color-azul-oscuro), url(../img/minato.jpg);
+	//background-color: $color-deg-card-b-1;
+	}
+
+	&-3{
+	background-image: linear-gradient(to right bottom, $color-deg-card-b-3, $color-deg-card-b-4), url(../img/Hashirama.jpg);
+	//background-color: $color-deg-card-b-1;
+	}
+
+	}
+
+	&_heading{
+	font-size: 1.8rem;
+	font-weight: 300;
+	text-align: right;
+	text-transform: uppercase;
+	color: $color-blanco;
+	position: absolute;
+	top: 10rem;
+	right: 2rem;
+	width: 80%; 
+	}
+
+	&_heading-span{
+	padding: 1rem;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+
+	&-1{
+	background-image: linear-gradient(to right bottom, rgba($color-deg-card-b-1, 0.85), rgba($color-deg-card-b-2, 0.85));
+	}
+
+	&-2{
+	background-image: linear-gradient(to right bottom, rgba($color-azul-claro, 0.85), rgba($color-azul-oscuro, 0.85));
+	}
+
+	&-3{
+	background-image: linear-gradient(to right bottom, rgba($color-deg-card-b-3, 0.85), rgba($color-deg-card-b-4, 0.85));
+	}
+
+	}
+
+	&_detalle{
+	padding: 2rem;
+
+	ul{
+	list-style: none;
+	width: 80%;
+	margin: 0 auto;
+
+	li{
+	text-align: center;
+	font-size: 1.5rem;
+	padding: .75rem;
+
+	&:not(:last-child){
+	border-bottom: 1px solid #eee;
+	}
+	}
+	}
+	}
+
+	&_comp_esp{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+
+	&-texto{
+	font-size: 3rem;
+	font-weight: 400;
+	color: $color-blanco;
+	text-align: center;
+	}
+	}
+
+
+	@include respond(tab-port){
+	margin-top: 3rem;
+	height: auto;
+	background-color: $color-blanco;
+	box-shadow: 0 1.5rem 4rem rgba($color-negro, .15);
+	border-radius: 10px;
+
+	&_lado{
+	height: auto;
+	position: relative;
+	box-shadow: none;
+
+
+	&-b{
+	transform: rotateY(0);
+	clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+	}
+
+	}
+
+	&:hover &_lado-a{
+	transform: rotateY(0);
+	}
+
+
+	&_detalle{
+	padding: 1rem 3rem;
+
+	}
+
+	&_comp_esp{
+	position: relative;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	transform: translate(0);
+	padding: 6rem 4rem 4rem 4rem;
+
+	&-texto{
+	font-size: 2.5rem;
+	
+	 }
+	}
+  }
+
+}

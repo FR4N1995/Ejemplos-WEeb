@@ -1,0 +1,68 @@
+
+  .row{
+    max-width: $ancho-grid;
+    margin: 0 auto;
+    //background-color: #fff;
+    margin-bottom: 30px;
+
+    &:not(:last-child){
+		margin-bottom: $espacio_row;
+
+        @include respond(tab-port){
+        margin-bottom: 2rem;
+        }
+    	}  
+
+        @include respond(tab-port){
+        max-width: 50rem;
+        padding: 0 3rem;
+        }
+    
+    @include clearfix;
+    [class^="col-"]{
+    float:left;
+    &:not(:last-child){
+    margin-right : $espacio_col;
+
+    @include respond(tab-port){
+    margin-right: 0;
+    margin-bottom: $espacio_row;
+    }
+
+    	}
+
+    @include respond(tab-port){  
+    width: 100% !important;
+    }
+
+
+    }
+
+    
+
+	.col-1-2{
+    	width: calc((100% - #{$espacio_col})/2);
+    }
+
+    .col-1-3{
+    	width: calc((100% - 2*#{$espacio_col})/3);
+    }
+
+     .col-1-4{
+    	width: calc((100% - 3*#{$espacio_col})/4);
+    }
+    
+     .col-2-3{
+    	width: calc(2*((100% - 2 * #{$espacio_col})/3) + #{$espacio_col});
+    }
+
+    .col-2-4{
+    	width: calc(2*((100% - 3 * #{$espacio_col})/4) + #{$espacio_col});
+    }
+
+    .col-3-4{
+    	width: calc(3*((100% - 3 * #{$espacio_col})/4) + 2*#{$espacio_col});
+    	}
+
+
+    }

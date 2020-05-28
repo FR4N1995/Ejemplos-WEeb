@@ -1,0 +1,28 @@
+.unidad-box{
+	background-color: rgba(#fff, .8);
+	font-size: $size-textoh3;
+	padding:2.5rem;
+	text-align: center;
+	border-radius: 3px;
+	box-shadow: 0 1.5rem 4rem rgba($color-negro, .15);
+	transition: transform 0.3s;
+
+
+	&_icon{
+	font-size: 6rem;
+	margin-bottom: 0.5rem;
+	background-image: linear-gradient(to right, $color-azul-claro, $color-azul-oscuro);
+	-webkit-background-clip: text;
+	color: transparent;
+	}
+
+	&:hover{
+	transform: translateY(-1.5rem) scale(1.05); 
+	}
+
+}
+
+.barra-trans{
+	color: transparent; 
+}
+

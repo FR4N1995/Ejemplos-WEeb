@@ -1,0 +1,29 @@
+
+.header{
+    height: 95vh;
+    /*background-image: linear-gradient(to right bottom,#27B0F1, #00D598) , url(../img/p1.jpg);*/
+    
+    background-image: linear-gradient(to right bottom, rgba($color-azul-oscuro,0.8),rgba($color-azul-claro,0.8)) , url(../img/portadanaruto.jpg);
+    
+    /*background-image:url(../img/d1.png);*/
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    /*clip-path: polygon(50% 0, 100% 100%, 0 100%);*/
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+
+}
+
+.logo-box{
+    
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+}
+
+#texto-logo{
+    font-family: IndieF;  
+    font-size: 5rem;
+    color: $color-blanco;
+}

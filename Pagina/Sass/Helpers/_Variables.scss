@@ -1,0 +1,40 @@
+
+@font-face{
+  font-family: LatoRe;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face{
+  font-family: IndieF;
+  src: url(../fonts/IndieFlower.ttf);
+}
+
+
+$color-azul-claro: #4dbef3;
+$color-azul-medio: #566bd1;
+$color-azul-oscuro: #1d53dd;
+$color-blanco: #fff;
+$color-negro: #000;
+$color-gris-claro: #f7f7f7;
+$color-deg-card-b-1: #beeba3;
+$color-deg-card-b-2: #8be852;
+$color-deg-card-b-3: #F2D6B1; 
+$color-deg-card-b-4: #EA773F;
+
+
+  
+//parrafos h1 
+$size-textoh1: 5rem;
+   
+
+//parrafos h2
+$size-textoh2: 3.5rem;
+
+
+//parrafos h3
+$size-textoh3: 1.5rem;
+
+//grid
+$ancho-grid: 114rem;
+$espacio_col: 4rem;
+$espacio_row: 3rem;

@@ -1,0 +1,100 @@
+
+body{
+	font-family: LatoRe, sefif;
+	font-weight: 400;
+	line-height: 1.7;
+	color: #777;
+	
+}
+
+.content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center; 
+
+
+	.principal{
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+
+    .texto-principal{
+	display: block;
+	font-size: $size-textoh1;
+	font-weight: 400;
+	letter-spacing: 20px;
+	line-height: 1.4;
+	animation-name: entrarDerecha;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	/*animation-iteration-count: 3;*/
+	/*animation-delay: 3s;*/
+
+	@include respond(tab-port){
+	letter-spacing: 1.8rem;
+	font-size: 4rem;
+	}
+
+	@include respond(tel){
+	letter-spacing: 1.5rem;
+	font-size: 3rem;
+	}
+
+}
+
+.texto-sub{
+	display: block;
+	font-size: 2rem;
+	font-weight: 400;
+	letter-spacing: 1.5rem;
+	animation-name: entrarIzquierda;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+
+
+	@include respond(tab-port){
+	letter-spacing: 1.2rem;
+	font-size: 2rem;
+	}
+
+
+	/*animation-iteration-count: 3;*/
+	/*animation-delay: 3s;*/
+}
+
+}
+
+}
+
+.headding-secundario{
+	font-size: $size-textoh2;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: inline-block;
+	background-image: linear-gradient(to right, $color-azul-claro, $color-azul-oscuro);
+	-webkit-background-clip: text;
+	color: transparent;
+
+	@include respond(tab-port){
+	font-size: 3.25rem;
+	}
+
+	@include respond(tel){
+	font-size: 2.5rem;
+	}
+}
+
+.headding-h-3{
+	font-size: $size-textoh3;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+
+}
+
+.parrafo{
+	font-size: $size-textoh3;
+	margin-bottom: 3rem;
+}
