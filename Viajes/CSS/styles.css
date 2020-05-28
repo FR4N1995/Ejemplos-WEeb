@@ -1,0 +1,390 @@
+html{
+
+    font-size: 62.5%; /** Reset para REMS 62.5% = 10px de 16px**/
+}
+
+
+
+
+/** Globales**/
+
+img{
+    max-width: 100%;  
+}
+
+body {
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    
+}
+h1{
+ font-size: 3.8rem;
+}
+
+h2{
+    font-size: 3.4rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 2.6rem;
+}
+
+.contenedor{
+    max-width: 120rem; /** esto es igual a 1200px**/
+    margin: 0 auto 0 auto;
+
+}
+
+span{
+    color: #E08709;
+}
+
+/*Utilidades*/
+
+
+.contenido-centrado{
+
+    max-width: 800px;
+}
+.contenido-contacto{
+
+    text-align: left;
+}
+
+
+/*Botones*/
+
+.boton{
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.boton-amarillo{
+    background-color: #E08709;
+    display: block;
+}
+
+.boton-verde{
+    background-color: #71B100;
+
+}
+
+
+
+/* header */
+.site-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+
+}
+
+.site-header.inicio{
+    background: url(../imagenes/atardecer.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50rem;
+    min-height: 60rem;
+
+}
+
+.contenido-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contenido-header h1{
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    align-items: center;
+}
+
+/* navegacion */
+
+.navegacion a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+.navegacion a:last-of-type{
+    margin: 0;
+}
+
+/* Utilidades */
+.section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*iconos nosotrsos*/
+.nosotros{
+    font-weight: 500;
+    text-align: center;
+   
+    
+}
+
+.icono-nosotros{
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+
+.icono{
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+}
+
+.icono h3{
+    text-transform: uppercase;
+}
+
+/*Paquetes de viaje*/
+
+.contenedor-paquetes{
+    display: flex;
+    justify-content: space-between;
+    /*pasarla en el padre por de faul es no wrap */
+    /*flex-wrap: wrap;*/
+    
+    
+
+}
+.texto-centrado{
+max-width: 400px;
+
+}
+
+.paquete{
+    /* flex: 0 0 calc(33.3% - 1rem); */
+    /*quiere decir qie se haga el diseño mas pequeño y el de faul es 1*/
+    flex-shrink: 0;
+    flex-basis: calc(33.3% - 1rem);
+    border-style: solid;
+    border-color: #b5b5b5;
+    border-width: 1px;
+    background: #f5f5f5;
+    margin-bottom: 2rem;
+   }
+
+   .contenido-paquete{
+      padding: 2rem; 
+   }
+
+   .contenido-paquete h3, .contenido-paquete p {
+
+    margin: 0;
+   }
+
+.precio{
+    color: green;
+}
+
+.todos{
+
+    display: flex;
+    justify-content: flex-end;
+}
+/* Imagen Contacto */
+
+.imagen-contacto{
+
+    background-image: url(../imagenes/atardecer.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto{
+    flex: 1;
+    color: #ffffff;
+}
+
+.contenido-contacto p{
+    font-size: 1.8rem;
+}
+
+/* seccion inferior*/
+
+.seccion-blog-opiniones{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.seccion-blog-opiniones .blog{
+    flex-basis: 60%;
+}
+
+.seccion-blog-opiniones .opiniones{
+    flex-basis: calc(40% - 2rem);
+}
+
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.entrada-blog:last-of-type{
+    margin-bottom: 0;
+}
+
+.entrada-blog .imagen{
+    flex-basis: 40%;
+}
+
+
+.entrada-blog .texto-entrada{
+    flex-basis: calc(60% - 3rem);
+    padding: 5rem;
+}
+
+.texto-entrada h4 {
+    margin: 0;
+
+}
+.texto-entrada a{
+    color: black;
+    text-decoration: none;
+}
+
+/*seudo elemento despues de H4 se llaman asi por que no se 
+pueden seleccionar*/
+.texto-entrada h4::after{
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: #71b100;
+}
+/* opiniones*/
+
+.opinion{
+    background-color: #71b100;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: #ffffff;
+    border-radius: 2rem;
+    
+   
+}
+.opinion p{
+    text-align: right;
+}
+
+/* FOOTER*/
+
+.sitio-footer{
+    background-color: #333333;
+    margin: 0;
+}
+.contenedor-footer{
+    display: flex;
+    padding: 3rem 0;
+    justify-content: space-between;
+}
+
+
+.reservados{
+margin: 0;
+color: #ffffff;
+}
+
+/*paginas internas*/
+/*Nosotros*/
+.contenido-nosotros{
+    /*Estandar grid*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2rem;
+ }
+ .texto-nosotros blockquote{
+     font-weight: 900;
+     font-size: 2rem;
+     margin: 0;
+    padding: 3rem 0;
+ }
+
+ /*Contacto*/
+form p{
+    font-size: 1.8rem;
+    margin: 2re 0 0 0;
+    color: #4f4f4f;
+}
+
+ legend{
+     font-size: 2rem;
+     color: #4f4f4f;
+ }
+
+ label{
+     display: block;
+     font-weight: 700;
+     text-transform: uppercase;
+ }
+
+ /*input[type="text"],input[type="email"]{
+     padding: .8rem;
+     display: block;
+     width: 98%;
+     background-color: #e1e1e1;
+     margin-bottom: 2rem;
+     border: none;
+     border-radius: 1rem;
+     
+ }*/
+ 
+
+ /*manera mas eficiente*/
+ input:not([type="submit"]),textarea,select{
+    padding: .8rem;
+    display: block;
+    width: 98%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+    
+}
+
+select{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+textarea{
+    height: 20rem;
+}
+
+.forma-contacto{
+
+    max-width: 55rem;
+    align-items: center;
+}
+
