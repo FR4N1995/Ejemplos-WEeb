@@ -1,0 +1,131 @@
+.card{
+	-moz-perspective: 150rem;
+	position: relative;
+	height: 65rem;
+	// border: 1px solid #000;
+	&_lado{
+		// color: #67db6f;
+		// font-size: 2rem;
+		height: 65rem;
+		transition: all .8s ease;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		backface-visibility: hidden;
+		border-radius: 10px;
+		overflow: hidden;
+		box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+	&-a{
+		background-color: #fff;
+
+
+		}
+	&-b{
+		transform: rotateY(180deg);
+		&-1{
+			background-image: linear-gradient(to right bottom, $color-azul, $color-azul-claro);
+
+		}
+		&-3{
+			background-image: linear-gradient(to right bottom, $color-naranja, $color-naranja2);
+
+		}
+
+
+	}
+
+
+	}
+	&:hover &_lado-a{
+		transform: rotateY(180deg);
+
+	}
+	&:hover &_lado-b{
+		transform: rotateY(0);
+
+	}
+
+	&_imagen{
+			height: 18rem;
+			background-blend-mode: soft-light;
+			background-size: cover;
+			clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+	&-1{
+			background-image: linear-gradient(to right bottom, $color-azul, $color-azul-claro), url(../img/img_card_1.jpg);
+	
+	}
+	&-2 {
+			background-image: linear-gradient(to right bottom, $color-azul, $color-azul-claro), url(../img/img_card_2.jpg);
+	
+	} 
+	&-3 {
+			background-image: linear-gradient(to right bottom, $color-naranja, $color-naranja2), url(../img/img_card_3.jpg);
+	
+	} 
+
+	}
+
+	&_headding{
+
+			font-size: 1.8rem;
+			font-weight: 300;
+			text-align: right;
+			text-transform: uppercase;
+			color: #fff;
+			position: absolute;
+			top: 10rem;
+			right: 2rem;
+			width: 75%;
+	}
+	&_headding-span{
+		padding: 1rem;
+		-webkit-box-decoration-break: clone;
+		 box-decoration-break: clone;
+		&-1{
+			background-image: linear-gradient(to right bottom, rgba($color-azul, 0.85),rgba($color-azul-claro, 0.85));
+
+		}
+		&-3{
+			background-image: linear-gradient(to right bottom, rgba($color-naranja, 0.85),rgba($color-naranja2, 0.85));
+
+		}
+
+	}
+	&_detalle{
+		padding: 2rem;
+		ul{
+			list-style: none;
+			width: 80%;
+		li{
+			test-align: center;
+			font-size: 1.5rem;
+			padding: .75rem;
+			&:not(:last-child){
+			border-bottom: 1px solid #eee;
+			}
+
+		}
+
+		}
+
+
+	}
+
+	&_comp_esp{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -50%);
+
+	&-texto{
+		font-size: 3rem;
+		font-weight: 400;
+		color: #fff;
+		text-align: center;
+	}
+
+	}
+
+}

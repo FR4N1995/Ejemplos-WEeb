@@ -1,0 +1,14 @@
+{
+  "name": "dia3",
+  "version": "1.0.0",
+  "description": "Pagina de programacion Web 3",
+  "main": "index.js",
+  "scripts": {
+   "compile:sass":"node-sass Sass/main.scss css/estilo.css -w"
+  },
+  "author": "Francisco",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

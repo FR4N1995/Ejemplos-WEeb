@@ -1,0 +1,41 @@
+*{
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+box-sizing: border-box; 
+padding: 3rem;
+@incluide respond(tab-port){
+padding: 0; 
+}
+}
+
+html{
+	
+	font-zise: 62.5%;  //1rem = 10px;
+
+	@media(max-width: 1200px){
+	font-size: 56.25%;
+
+	}
+
+	@media(max-width:900){
+		font-size: 50%;
+
+	}
+
+	@media (max-width: 600px){
+	font-size: 43.75%;
+
+	}
+
+	@media(min-width: 130px){
+		font-size: 75%;
+
+	}
+
+}
+

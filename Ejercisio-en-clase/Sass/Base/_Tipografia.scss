@@ -1,0 +1,81 @@
+body{
+
+   font-family: cursive;
+   font-weight: 400px;
+   font-size: 16px;
+   line-height: 1.7;
+   color: #777;
+   padding: 30px;
+}
+
+
+
+.conten{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+	.principal{
+	color: #fff;
+	text-transform: uppercase;
+	}
+}
+
+.principal{
+	color: #fff;
+	text-transform: uppercase;
+
+	.texto{
+	font-family: Bubblegum;
+	display: block;
+	font-size: 50px;
+	font-weight: 400;
+	letter-spacing: 20px;
+	line-height: 1,4;
+	animation-name: entrarDerecha;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+}
+
+}
+
+
+.sub{
+
+	display: block;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 15px;
+	animation-name: entrarIzquierda;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+}
+
+.headding-secundario{
+	
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: inline-block;
+    background-image: linear-gradient(to right, #4dbef3 , #566bd1);
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.headding-h-3{
+	
+	font-size: $size-texto;
+	font-weight: 700;
+	text-tranform: uppercase;
+	margin-bottom: 1rem;
+
+}
+
+.parrafo{
+	
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+
+}

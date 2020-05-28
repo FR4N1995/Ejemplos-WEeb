@@ -1,0 +1,28 @@
+.btn-texto{
+	
+	&:link;
+	&: visited{
+		font-size $size-texto;
+		color:#566bd1;
+		display: inline-block;
+		text-decoration: none;
+		padding: o.5rem;
+		border-bottom: 1px solid #566bd1;
+
+	}
+
+	&hover{
+	background-color:#566bd1;
+	color: #000;
+	box-shadow: 0 1rem 2rem rgba(0,0,0,.15)
+	transform: traslateY(-0.2rem);
+
+	}
+
+	&active{
+	box-shadow: 0 5rem 1rem rgba(0,0,0,.15)
+	transform: traslateY(0);
+
+
+	}
+}

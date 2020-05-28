@@ -1,0 +1,46 @@
+@keyframes entrarDerecha{
+
+	0%{
+		opacity: 0;
+		transform: translateX(-1000px);
+	}
+
+	50%{
+		transform: translateX(50%);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes entrarIzquierda{
+
+	0%{
+
+		transform: translateX(1000px);
+	}
+
+	50%{
+		transform: translateX(-50%);
+	}
+	100%{
+		transform: translate(0);
+	}
+}
+@keyframes entrarabajo{
+
+0%{
+	opacity: 0;
+	transform: translateY(1000px);
+}
+50%{
+
+	transform: translateY(50%);
+}
+100%{
+	opacity: 1;
+transform: translate(0);
+
+}
+}

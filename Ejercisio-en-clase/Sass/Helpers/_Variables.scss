@@ -1,0 +1,36 @@
+
+
+
+@font-face{
+  font-family: Bubblegum;
+  src: url(../Fonts/Bubblegum.ttf);
+}
+@font-face{
+	font-family: equalize;
+	src: url(../Fonts/Equalize.ttf);
+
+}
+@font-face{
+	font-family: WarWound;
+	src: url(../Fonts/WarWound.otf);
+}
+
+//h1
+$size-h1: 5rem;
+
+//h2
+$size-h2: 3.5rem;
+ 
+ //parrafos y h3
+   $size-texto: 1.5rem;
+
+//grid
+
+   $ancho-grid: 114rem;
+   $espacio_col: 4rem;
+   $espacio_row: 3rem;
+
+ $color-azul: #566bd1;
+  $color-azul-claro: #4bdef3;
+  $color-naranja: #F2D6B1;
+  $color-naranja2: #EA773F;
