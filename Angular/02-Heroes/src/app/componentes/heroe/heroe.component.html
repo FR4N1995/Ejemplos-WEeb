@@ -1,0 +1,31 @@
+<h1 class="animated fadeIn">{{horeo.nombre | uppercase }}</h1> <small>{{horeo.aparicion | date:'y'}}</small>
+
+<div class="row animated fadeIn">
+
+    <div class="col-md-4">
+
+
+        <img [src]="horeo.img" class="img-fluid" alt="">
+        <br>
+        <a [routerLink]="['/heroes']" class="btn btn-outline-danger btn-block">Regresar</a>
+
+
+
+
+    </div>
+    <div class="col-md-8">
+        <h3>{{horeo.nombre}}</h3>
+        <hr>
+        <p>
+            {{horeo.bio}}
+        </p>
+        <br>
+        <h1 *ngIf="horeo.casa == 'Marvel'">Marvel</h1>
+        <h1 *ngIf="horeo.casa == 'DC' ">DC</h1>
+
+
+    </div>
+
+
+
+</div>
