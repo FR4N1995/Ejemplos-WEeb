@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="app2">
+        <nav class="navbar" :class="{'bg-primary': colornav, 'bg-success': !colornav}">
+            <p class="text-white">Barra de navegacion</p>
+        </nav>
+        <br>
+        <div class="container">
+            <button class="btn btn-danger " @click="colornav = !colornav"> cambiar color Nav-Var</button>
+        </div>
+
+    </div>
+
+
+
+    <div id="app" class="container my-5 ">
+
+
+
+        <div :class="['p-3', 'text-white', fondo]">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro autem tenetur enim eius numquam! Laboriosam minus reprehenderit ullam explicabo repellat. Sed cum fugiat aliquam voluptate laborum repellat consectetur corrupti rem? Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Ratione, adipisci amet voluptatem quod quidem at voluptates praesentium, aliquam itaque ipsum maiores. Eum minima autem corrupti reprehenderit pariatur laborum, vitae quo?
+        </div>
+
+        <input type="text" class="form-control my-3" v-model="fondo">
+
+        <div class="text-white p-3" :class="{'bg-info' : color, 'bg-success': !color}">
+
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, ex! Magnam sequi odio repellat iste consectetur aliquid, omnis, corrupti voluptatibus, sed porro eum iusto doloremque quas dolorem asperiores fugit. Fugit.</p>
+        </div>
+        <br>
+
+        <button class="btn btn-primary" @click="color= !color">cambiar</button>
+
+
+    </div>
+    <script src=" https://cdn.jsdelivr.net/npm/vue "></script>
+    <script src="07.js"></script>
+
+</body>
+
+</html>

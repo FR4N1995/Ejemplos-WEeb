@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>{{titulo}}</h1>
+
+        <input type="text" v-model="nuevaFruta" @keyup.enter="agregarFruta"></input>
+
+
+        <button @click="agregarFruta">Agregar</button>
+
+
+        <ul>
+            <li V-for="fruta of frutas">
+                <input type="number" v-model.number="fruta.cantidad"> {{fruta.cantidad}}--{{fruta.nombre}}
+
+                <span v-if="fruta.cantidad===0">Es cero</span>
+
+                <button @click="fruta.cantidad++">+</button>
+
+            </li>
+        </ul>
+
+        <h4>TOTAL: {{sumarFrutas}}</h4>
+
+
+    </div>
+
+
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/vue "></script>
+    <script src="01-hola-mundo.js "></script>
+
+</body>
+
+</html>
